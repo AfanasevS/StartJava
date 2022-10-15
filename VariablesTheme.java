@@ -39,10 +39,14 @@ public class VariablesTheme {
         pixels = 2_147_483_647;
         hardMemory = 9_223_372_036_854_775_807L;
 
-        System.out.println(cash + ", " + (++cash) + ", " + (--cash));
-        System.out.println(mainMemory + ", " + (++mainMemory) + ", " + (--mainMemory));
-        System.out.println(pixels + ", " + (++pixels) + ", " + (--pixels));
-        System.out.println(hardMemory + ", " + (++hardMemory) + ", " + (--hardMemory));
+        System.out.println("Первоначальное значение " + cash + ", значение после инкремента " + (++cash)
+                + ", значение после декремента " + (--cash));
+        System.out.println("Первоначальное значение " + mainMemory + ", значение после инкремента "
+                + (++mainMemory) + ", значение после декремента " + (--mainMemory));
+        System.out.println("Первоначальное значение " + pixels + ", значение после инкремента" + (++pixels)
+                + ", значение после декремента " + (--pixels));
+        System.out.println("Первоначальное значение " + hardMemory + ", значение после инкремента" + (++hardMemory)
+                + ", значение после декремента " + (--hardMemory));
 
         System.out.println("5. Перестановка значений переменных");
         int d = 2;
@@ -62,7 +66,8 @@ public class VariablesTheme {
         System.out.println("d =" + d + ", e = " + e);
 
         System.out.println("С помощью побитовой операции");
-
+        //d^e;
+        System.out.println("d =" + d + ", e = " + e);
 
         System.out.println("6. Вывод символов и их кодов");
         char MyChar1 = '\u0035';
@@ -76,7 +81,6 @@ public class VariablesTheme {
         System.out.println("Код символа 64 в системе ASCII-таблицы - " + MyChar3 + ".");
         System.out.println("Код символа 94 в системе ASCII-таблицы - " + MyChar4 + ".");
         System.out.println("Код символа 95 в системе ASCII-таблицы - " + MyChar5 + ".");
-
 
         System.out.println("7. Отображение количества сотен, десятков и единиц числа");
         int number = 123;
@@ -92,17 +96,20 @@ public class VariablesTheme {
         char openBraket = '(';
         char closeBraket = ')';
         char underline = '_';
-        System.out.println();
-
-
-
+        System.out.println("    " + backSlash + slash + "    " + "\n" + "   " + backSlash + "  " + slash + "   "
+                + "\n" + "  " + backSlash + underline + openBraket + " " + closeBraket + slash + "   " + "\n"
+                + " " + backSlash + "      " + slash + "  " + "\n" + backSlash + underline + underline + underline
+                + underline + backSlash + slash + underline + underline + slash);
 
         System.out.println("9. Произведение и сумма цифр числа");
-        int digit = 345;
-        int sum = (digit / 100) + (digit / 80) + (345 % 20);
-        int multiply = (digit / 100) * (digit / 80) * (345 % 20);
-        System.out.println("Сумма цифр числа " + digit + " - " + sum + " .");
-        System.out.println("Произведение цифр числа " + digit + " - " + multiply + " .");
+        int number9 = 345;
+        int firstNumber = number9 / 100;
+        int secondNumber = (number9 % 100) / 10;
+        int thirdNumber = number9 % 10;
+        int sum = firstNumber + secondNumber + thirdNumber;
+        int multiply = firstNumber * secondNumber * thirdNumber;
+        System.out.println("Сумма цифр числа " + number9 + " - " + sum + " .");
+        System.out.println("Произведение цифр числа " + number9 + " - " + multiply + " .");
 
         System.out.println("10. Преобразование секунд");
         int sourceSeconds = 86399;
@@ -110,7 +117,5 @@ public class VariablesTheme {
         int minutes = (sourceSeconds / 60) % 60;
         int seconds = sourceSeconds % 60;
         System.out.println(hours + " : " + minutes + " : " + seconds);
-
-
     }
 }
