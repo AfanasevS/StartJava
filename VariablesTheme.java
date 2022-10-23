@@ -73,7 +73,7 @@ public class VariablesTheme {
 
         System.out.println("С помощью побитовой операции");
         a ^= b;
-        b = a ^ b;
+        b ^= a;
         a ^= b;
         System.out.println("a = " + a + ", b = " + b);
 
