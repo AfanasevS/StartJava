@@ -1,10 +1,10 @@
 public class IfElseStatementTheme {
     public static void main(String[] args) {
-        System.out.println("Перевод псевдокода на язык Java");
+        System.out.println("1. Перевод псевдокода на язык Java");
         int age = 20;
         String sex = "man";
         double height = 1.74;
-        String name = "Сергей";
+        String name = "Sergey";
         char firstLetterOfName;
 
         if (age > 20) {
@@ -75,41 +75,41 @@ public class IfElseStatementTheme {
         int hundredNumber2 = number2 / 100;
         int dozenNumber2 = (number2 / 10) % 10;
         int onesNumber2 = number2 % 10;
-        int class1= 3;
+        int class1 = 3;
         int class2 = 2;
         int class3 = 1;
 
         System.out.println(" Нам даны 2 числа - " + number1 + " и " + number2);
         if (hundredNumber1 == hundredNumber2) {
-            System.out.println("Найдены одинаковые числа в " + class1 + " разряде: " + hundredNumber1 + " = "
-                    + hundredNumber2);
+            System.out.println("Найдены одинаковые числа в " + class1 + " разряде: "
+                    + hundredNumber1 + " = " + hundredNumber2);
         } else {
             System.out.println("Нет одинаковых чисел в " + class2 + " разряде.");
         }
         if (dozenNumber1 == dozenNumber2) {
-            System.out.println("Найдены одинаковые числа в " + class2 + " разряде: " + dozenNumber1 + " = "
-                    + dozenNumber2);
+            System.out.println("Найдены одинаковые числа в " + class2 + " разряде: "
+                    + dozenNumber1 + " = " + dozenNumber2);
         } else {
             System.out.println("Нет одинаковых чисел в " + class2 + " разряде.");
         }
         if (onesNumber1 == onesNumber2) {
-            System.out.println("Найдены одинаковые числа в " + class3 + " разряде: " + onesNumber1 + " = "
-                    + onesNumber2);
+            System.out.println("Найдены одинаковые числа в " + class3 + " разряде: "
+                    + onesNumber1 + " = " + onesNumber2);
         } else {
             System.out.println("Нет одинаковых чисел в " + class3 + " разряде.");
         }
 
         System.out.println("\n5. Определение буквы, числа или символа по их коду");
-        char ch1 = '\u0057';
+        char symbol = '\u0057';
 
-        if (ch1 >= '\u0061' && ch1 <= '\u007A' ) {
-            System.out.println("Символ " + ch1 + " - маленькая буква.");
-        } else if (ch1 >= '\u0041' && ch1 <= '\u005A' ) {
-            System.out.println("Символ " + ch1 + " - большая буква.");
-        } else if (ch1 >= '\u0030' && ch1 <= '\u0039' ){
-            System.out.println("Символ " + ch1 + " - число.");
+        if (symbol >= '\u0061' && symbol <= '\u007A') {
+            System.out.println("Символ " + symbol + " - маленькая буква.");
+        } else if (symbol >= '\u0041' && symbol <= '\u005A') {
+            System.out.println("Символ " + symbol + " - большая буква.");
+        } else if (symbol >= '\u0030' && symbol <= '\u0039') {
+            System.out.println("Символ " + symbol + " - число.");
         } else {
-            System.out.println("Символ " + ch1 + " - не число и не буква.");
+            System.out.println("Символ " + symbol + " - не число и не буква.");
         }
 
         System.out.println("\n6. Определение суммы вклада и начисленных банком %");
@@ -158,8 +158,8 @@ public class IfElseStatementTheme {
         }
         System.out.println(markHistory + " - оценка по истории");
         System.out.println(markProgramming + " - оценка по программированию");
-        System.out.println("Средний балл по успеваемости - " + ((markHistory+markProgramming)/2));
-        System.out.println("средний % по предметам - " + ((scoreProgramming+scoreHistory)/2));
+        System.out.println("Средний балл по успеваемости - " + ((markHistory + markProgramming) / 2));
+        System.out.println("средний % по предметам - " + ((scoreProgramming + scoreHistory) / 2));
 
         System.out.println("\n8. Расчет прибыли");
         int rent = 5000;
@@ -179,16 +179,15 @@ public class IfElseStatementTheme {
         int nominalBanknote100 = 100;
         int nominalBanknote10 = 10;
         int nominalBanknote1 = 1;
-        int banknote1 = (dollars - (banknote100 * nominalBanknote100) - (banknote10 * nominalBanknote10))
-                / nominalBanknote1;
+        int banknote1 = (dollars - (banknote100 * nominalBanknote100)
+                - (banknote10 * nominalBanknote10)) / nominalBanknote1;
 
-        System.out.println("В банкомате есть банкноты нескольких номиналов: " + nominalBanknote100 + ", "
-                + nominalBanknote10 + ", " + nominalBanknote1);
+        System.out.println("В банкомате есть банкноты нескольких номиналов: "
+                + nominalBanknote100 + ", " + nominalBanknote10 + ", " + nominalBanknote1);
         System.out.println("Для того,чтобы выдать 567 $ необходимо " + banknote100 + " банкнот по "
-                + nominalBanknote100 + "$, " + banknote10 + " банкнот по " + nominalBanknote10 + " $ и " + banknote1
-                + " банкнот по " + nominalBanknote1);
-        System.out.println("Исходная сумма - " + (banknote100 * nominalBanknote100 + banknote10 * nominalBanknote10
-                + banknote1 * nominalBanknote1));
+                + nominalBanknote100 + "$, " + banknote10 + " банкнот по " + nominalBanknote10
+                + " $ и " + banknote1 + " банкнот по " + nominalBanknote1);
+        System.out.println("Исходная сумма - " + (banknote100 * nominalBanknote100
+                + banknote10 * nominalBanknote10 + banknote1 * nominalBanknote1));
     }
 }
-
