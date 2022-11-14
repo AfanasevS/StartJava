@@ -67,8 +67,7 @@ public class CyclesTheme {
             for (int k = 0; k < 5; k++) {
                 if (i < 24) {
                     System.out.printf("%4d", i);
-                }
-                else {
+                } else {
                     System.out.printf("%4d", 0);
                 }
                 i += 2;
